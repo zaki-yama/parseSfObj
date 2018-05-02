@@ -88,9 +88,38 @@
         <fullName>Reimbursed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>払い戻し済み?</label>
+        <label>Reimbursed?</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>経費種別</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>旅費交通費</fullName>
+                    <default>false</default>
+                    <label>旅費交通費</label>
+                </value>
+                <value>
+                    <fullName>通信費</fullName>
+                    <default>false</default>
+                    <label>通信費</label>
+                </value>
+                <value>
+                    <fullName>接待交際費</fullName>
+                    <default>false</default>
+                    <label>接待交際費</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Expense</label>
     <listViews>
